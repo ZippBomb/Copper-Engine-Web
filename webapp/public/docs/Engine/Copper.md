@@ -1,11 +1,9 @@
-# Summary
-Header that includes the most bare basic parts of the Engine. Should be included in every header file of a Copper-Engine application
+---
+type: Header
+header: Copper.h
+source: None
+namespace: None
+summary: The main Header that includes the most bare basic parts of the Copper-Engine.
+---
 
-# Header
-Copper.h
-# Source
-No source
-# Namespace
-No namespace
-# Type
-Header 
+This header should be included in every part of a Copper-Engine application.

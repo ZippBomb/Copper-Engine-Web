@@ -1,0 +1,4 @@
+.main {
+    min-height: var(--page-full-height);
+    padding-bottom: 100px;
+}

@@ -7,7 +7,7 @@
   width: 100%;
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: repeat(5 1fr);
+  grid-template-columns: repeat(6 1fr);
   gap: 0px;
   align-items: center;
 }
@@ -40,8 +40,17 @@
     font-family: var(--font-title);
 }
 
-.test {
+.learn {
+    background-color: var(--navbar-base-color);
+    color: var(--text-color);
+    padding: 0.9rem 10px;
     position: relative;
+    text-align: center;
+    text-decoration: none;
+}
+.learn:hover {
+    background-color: var(--button-color-hover);
+    color: var(--text-color);
 }
 .dropdown {
     background-color: var(--navbar-base-color);

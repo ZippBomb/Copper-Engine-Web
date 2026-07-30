@@ -1,0 +1,84 @@
+.header {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.header img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+}
+
+.headerContainer {
+    color: #ededed;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    padding: 150px 0px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerContainer h1 {
+    font-size: clamp(2.5rem, 12vw, 5rem);
+    font-family: var(--font-title);
+    padding-bottom: 30px;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+}
+.headerContainer h2 {
+    font-size: clamp(1.8rem, 4vw, 2rem);
+    font-weight: 400;
+    font-family: var(--font-subtitle);
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+    text-align: center;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button a {
+    background-color: var(--button-color-hover);
+    color: var(--text-color);
+    box-shadow: var(--box-shadow-small);
+    border-radius: 15px;
+    margin: 30px 30px;
+    margin-bottom: 10px;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+.button a:hover {
+    background-color: var(--text-color-secondary);
+}
+
+.button a h3 {
+    font-family: var(--font-title);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.button a p {
+    text-align: center;
+    font-family: var(--font-title);
+    font-size: 1.1rem;
+}
+
+.date {
+    font-size: 1.1rem;
+}
+
+/* Instructions */
+
+.instructions {
+    background-color: var(--base-color);
+    margin: auto;
+    padding: 75px 0px;
+    max-width: 85vw;
+}

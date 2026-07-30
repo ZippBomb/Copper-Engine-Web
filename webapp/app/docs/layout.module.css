@@ -9,15 +9,3 @@
     min-height: 80vh;
     max-width: 80vw;
 }
-.page h2 {
-    text-align: center;
-}
-.page p {
-    font-size: 1.1rem;
-}
-.page code {
-    background-color: var(--code-bg-color);
-    border-radius: 5px;
-    padding: 1px 4px;
-    font-size: 0.9rem;
-}

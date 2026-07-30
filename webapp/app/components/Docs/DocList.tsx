@@ -29,10 +29,14 @@ export async function GetDoc(dir : string) : Promise<DocData | undefined> {
     const { data, content } = matter(raw);
 
     return {
-
         name: path.parse(dir).name,
         content: content,
+        summary: data.summary,
 
+        type: data.type,
+        header: data.header,
+        source: data.source,
+        namespace: data.namespace,
     }
 
 }

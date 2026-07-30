@@ -12,7 +12,6 @@ import styles from "./page.module.css"
 export default async function Page({ params, } : { params : Promise<{ id: string }> }) {
 
     const { id } = await params;
-
     const data: DocData | undefined = await GetDoc(id);
 
     if (!data) {
@@ -26,9 +25,34 @@ export default async function Page({ params, } : { params : Promise<{ id: string
 
     return (
         <>
-            <h2>{id}</h2>
             <div className={styles.doc}>
-                <h1>{data.name}</h1>
+                <h1>{id}</h1>
+                <p>{data.summary}</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colSpan={2}>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Type</td>
+                            <td>{data.type}</td>
+                        </tr>
+                        <tr>
+                            <td>Header</td>
+                            <td>{data.header}</td>
+                        </tr>
+                        <tr>
+                            <td>Source</td>
+                            <td>{data.source}</td>
+                        </tr>
+                        <tr>
+                            <td>Namespace</td>
+                            <td>{data.namespace}</td>
+                        </tr>
+                    </tbody>
+                </table>
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>
                     {data.content}
                 </ReactMarkdown>

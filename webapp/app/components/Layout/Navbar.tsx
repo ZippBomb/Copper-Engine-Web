@@ -21,13 +21,16 @@ export default function Navbar() {
             <Link href="/">
                 <p>Home</p>
             </Link>
+            <Link href="/download">
+                <p>Download</p>
+            </Link>
             <Link href="/about?view=overview">
                 <p>About</p>
             </Link>
             <Link href="/blog">
                 <p>Blog</p>
             </Link>
-            <Link className={styles.test} href="/docs" onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
+            <div className={styles.learn} onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
                 <p>Learn</p>
                 {open && (
                     <div className={styles.dropdown}>
@@ -35,7 +38,7 @@ export default function Navbar() {
                         <Link href="/docs"><p>Docs</p></Link>
                     </div>
                 )}
-            </Link>
+            </div>
         </nav>
     )
 

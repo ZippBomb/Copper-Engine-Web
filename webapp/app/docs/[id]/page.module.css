@@ -1,3 +1,35 @@
-.doc pre {
-    text-wrap: wrap;
+.doc h1, .doc h2, .doc h3, .doc h4 {
+    text-align: center;
+    margin: 15px 0px;
+}
+.doc p {
+    margin: 1rem 0px;
+}
+
+.doc table {
+    margin: 25px 0px;
+    border-collapse: collapse;
+}
+
+.doc th {
+    padding: 5px 10px;
+    background-color: var(--table-head-color);
+    border: var(--table-border-color) 1px solid;
+}
+
+.doc tr {
+    background-color: var(--table-row-color);
+}
+.doc tr:nth-child(2n) {
+    background-color: var(--table-row-color-secondary);
+}
+
+.doc td {
+    width: 67%;
+    padding: 5px 10px;
+    border: var(--table-border-color) 1px solid;
+}
+
+.doc td:nth-child(2n + 1) {
+    width: 33%;
 }
